@@ -1,6 +1,14 @@
 {
-  "name": "ts-sample",
+  "name": "ts-starter",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "build:watch": "tsc -p . --watch",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  }
 }
