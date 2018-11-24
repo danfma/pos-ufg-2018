@@ -1,10 +1,9 @@
 import { Calc } from "./model";
 import { CalcController } from "./controller";
-import { CalcView, ConsoleCalcView } from "./view";
+import { CalcView } from "./view";
 
 const model = new Calc();
-// const view = new CalcView();
-const view = new ConsoleCalcView();
+const view = new CalcView();
 const controller = new CalcController(model, view);
 
 view.controller = controller;
