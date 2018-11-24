@@ -1,0 +1,16 @@
+{
+  "name": "mvc-calc",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "build:watch": "tsc -p . --watch",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.10"
+  }
+}
