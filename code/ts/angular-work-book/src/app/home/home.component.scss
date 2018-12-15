@@ -1,0 +1,16 @@
+$background: #3c7c5c;
+
+header {
+  background-color: $background;
+  padding: 2rem;
+  color: white;
+}
+
+main > .location-section {
+  padding: 2rem;
+  background-color: #d6d6d6;
+
+  & > h2 {
+    display: none;
+  }
+}

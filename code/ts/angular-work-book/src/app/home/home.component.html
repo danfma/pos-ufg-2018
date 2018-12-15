@@ -1,0 +1,27 @@
+<header>
+  <h1>Locações de trabalho</h1>
+</header>
+
+<main>
+  <section class="location-section">
+    <h2>Locações</h2>
+
+    <form (ngSubmit)="addLocation()">
+      <div>
+        <input
+          name="locationName"
+          type="text" [(ngModel)]="locationName">
+
+        <button type="submit">
+          Adicionar
+        </button>
+      </div>
+    </form>
+
+    <ul>
+      <li *ngFor="let location of locations">
+        {{ location.name }}
+      </li>
+    </ul>
+  </section>
+</main>
